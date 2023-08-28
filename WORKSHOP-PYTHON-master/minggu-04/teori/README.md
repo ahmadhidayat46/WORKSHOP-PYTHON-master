@@ -1,0 +1,5 @@
+Ringksan materi 
+
+BAB 6 "Modul di python"
+
+Modul Python adalah file yang berisi definisi dan pernyataan yang dapat diimpor dan digunakan dalam modul atau skrip lain. Setiap modul memiliki ruang nama pribadinya sendiri, yang digunakan sebagai ruang nama global untuk semua fungsi modul. Modul dapat mengimpor modul lain, dan merupakan kebiasaan untuk menempatkan pernyataan impor di awal modul. Saat menjalankan modul Python dengan argumen, kode dalam modul dijalankan dengan nama yang disetel ke "main". Saat mengimpor modul dengan Python, juru bahasa mencari modul bawaan dengan nama yang sama di sys.builtin_module_names. Jika tidak ditemukan, ia akan mencari file dengan nama yang sama dalam daftar direktori yang diberikan oleh sys.path. Python cache mengkompilasi versi modul di direktori pycache untuk mempercepat pemuatan. Python hadir dengan pustaka modul standar yang dibangun ke dalam juru bahasa, memberikan akses ke operasi yang bukan bagian dari inti bahasa tetapi tetap dibangun, baik untuk efisiensi atau untuk menyediakan akses ke primitif sistem operasi seperti panggilan sistem. Fungsi dir() digunakan untuk mengetahui nama mana yang didefinisikan oleh modul.

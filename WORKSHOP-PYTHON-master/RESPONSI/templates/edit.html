@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %} Data{% endblock %}
+
+{% block header %} Edit Data{% endblock %}
+
+{% block body %}
+    <div class="card-body">
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input type="text" id="name" class="form-control" name="name" value="{{ data.name }}">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input type="text" id="email" class="form-control" value="{{ data.email }}" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="telp">Telp:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input type="text" id="telp" class="form-control" value="{{ data.telp }}" name="telp">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="addr">Address:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input value="{{ data.address }}" rows="10" cols="30" id="address" name="address" autocomplete="off" class="form-control">
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: 10px;">
+                <button type="submit" class="btn btn-success btn-sm" name="submit" >Submit</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+

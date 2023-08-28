@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %} Input Data {% endblock %}
+
+{% block header %} Add New{% endblock %}
+
+{% block body %}
+    <a href="{{ url_for('index') }}" class="btn btn-primary">Back</a>
+    <div class="card-body">
+        <form action="{{ url_for('input_data')}}" method="POST">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input type="text" id="name" class="form-control" placeholder="Input Name" name="name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input type="text" id="email" class="form-control" placeholder="Input Email" name="email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="telp">Telp:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input type="text" id="telp" class="form-control" placeholder="Input Telp" name="telp">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="addr">Address:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <input placeholder="Input Address" rows="10" cols="30" id="address" name="address" autocomplete="off" class="form-control">
+                </div>
+            </div>
+            <div class="form-group" style="margin-top: 10px;">
+                <button type="submit" class="btn btn-success btn-sm" name="submit" >Submit</button>
+                <button type="reset" class="btn btn-danger btn-sm" >Cancle</button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
